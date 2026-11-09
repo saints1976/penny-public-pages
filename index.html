@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>About Penny OS — Private Personal Chief of Staff</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --surface-alt: #0b1120;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #cbd5e1;
+      --text-subtle: #94a3b8;
+      --accent: #6366f1;
+      --accent-soft: rgba(99, 102, 241, 0.16);
+      --accent-border: rgba(99, 102, 241, 0.45);
+      --accent-link: #818cf8;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 32px 20px 64px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page-shell {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      box-shadow: 0 18px 40px rgba(2, 6, 23, 0.45);
+    }
+    .header-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: #c7d2fe;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 10px;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 22px 0 8px;
+      color: #e2e8f0;
+    }
+    p, li {
+      font-size: 14.5px;
+      color: var(--text-muted);
+    }
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12.5px;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 5px;
+      color: #e2e8f0;
+    }
+    a {
+      color: var(--accent-link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .nav-bar {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13.5px;
+    }
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 13.5px;
+      text-decoration: none;
+    }
+    .btn-link:hover {
+      background: #4f46e5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="header-row">
+      <div class="brand">
+        <div class="brand-mark">P</div>
+        <div>
+          <div style="font-weight:700;font-size:18px;">Penny OS · Personal Assistant</div>
+          <div style="font-size:12.5px;color:var(--text-subtle);">Single-Owner Private Application Homepage</div>
+        </div>
+      </div>
+      <span class="badge">Private Single-Owner App</span>
+    </header>
+
+    <h1>About Penny</h1>
+    <p>
+      <strong>Penny</strong> (<code>penny-experiences</code>) is a single-owner private personal Chief of Staff,
+      Priority Board, NYC Scout, and schedule planning web application operated solely by <strong>Darrell Crane</strong>.
+    </p>
+    <p>
+      Penny is not a public multi-user product or commercial SaaS service. All operational interfaces
+      (<code>/</code>, <code>/api/*</code>) are strictly restricted to the application owner behind private authentication
+      (WebAuthn Face ID platform passkey and rate-limited owner access token).
+    </p>
+
+    <h2>Core Capabilities</h2>
+    <ul>
+      <li><strong>Priority Board:</strong> Reviews and triages the owner's personal Commitment Ledger stored in his private Open Brain Supabase database, with governed, version-checked commitment updates and 10-second undo.</li>
+      <li><strong>NYC Scout:</strong> Evaluates curated NYC cultural and live-music events against the owner's personal schedule and taste profile without automated ticket purchasing.</li>
+      <li><strong>Schedule Planning &amp; Conflict Detection:</strong> Connects to the owner's personal Google Calendar to read busy/free windows in <code>America/New_York</code> time and to create new calendar blocks only when explicitly approved by the owner in the application.</li>
+    </ul>
+
+    <h2>Owner &amp; Developer Contact</h2>
+    <p>
+      Operated solely by <strong>Darrell Crane</strong>.<br />
+      Contact email: <a href="mailto:darrell.k.crane@gmail.com">darrell.k.crane@gmail.com</a>
+    </p>
+
+    <nav class="nav-bar" aria-label="Public page navigation">
+      <div>
+        <a href="/privacy">Privacy Policy</a>
+        <span style="color:var(--text-subtle);margin:0 8px;">·</span>
+        <a href="mailto:darrell.k.crane@gmail.com">darrell.k.crane@gmail.com</a>
+      </div>
+      <a class="btn-link" href="/login">Owner Sign-In (/login)</a>
+    </nav>
+  </main>
+</body>
+</html>
